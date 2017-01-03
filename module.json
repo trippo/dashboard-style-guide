@@ -4,6 +4,6 @@
     "author": "Tedozi Manson",
     "description": "WebEd style guide for admin dashboard",
     "namespace": "WebEd\\Plugins\\DashboardStyleGuide",
-    "version": "1.0",
+    "version": "1.0.1",
     "autoload": "psr-4"
 }

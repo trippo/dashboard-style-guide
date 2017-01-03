@@ -35,7 +35,7 @@ class BootstrapModuleServiceProvider extends ServiceProvider
          */
         \DashboardMenu::registerItem([
             'id' => 'webed-dashboard-style-guide',
-            'piority' => 9999,
+            'priority' => 9999,
             'parent_id' => null,
             'heading' => null,
             'title' => 'Admin style guide',
@@ -45,7 +45,7 @@ class BootstrapModuleServiceProvider extends ServiceProvider
         ])
             ->registerItem([
                 'id' => 'webed-dashboard-style-guide.index',
-                'piority' => 1,
+                'priority' => 1,
                 'parent_id' => 'webed-dashboard-style-guide',
                 'heading' => null,
                 'title' => 'Basic',
@@ -55,7 +55,7 @@ class BootstrapModuleServiceProvider extends ServiceProvider
             ])
             ->registerItem([
                 'id' => 'webed-dashboard-style-guide.colors',
-                'piority' => 1,
+                'priority' => 1,
                 'parent_id' => 'webed-dashboard-style-guide',
                 'heading' => null,
                 'title' => 'Colors',
@@ -65,7 +65,7 @@ class BootstrapModuleServiceProvider extends ServiceProvider
             ])
             ->registerItem([
                 'id' => 'webed-dashboard-style-guide.font-icons',
-                'piority' => 2,
+                'priority' => 2,
                 'parent_id' => 'webed-dashboard-style-guide',
                 'heading' => null,
                 'title' => 'Font icons',
