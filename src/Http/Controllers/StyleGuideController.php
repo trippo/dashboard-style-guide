@@ -1,6 +1,6 @@
 <?php namespace WebEd\Plugins\DashboardStyleGuide\Http\Controllers;
 
-use WebEd\Base\Core\Http\Controllers\BaseAdminController;
+use WebEd\Base\Http\Controllers\BaseAdminController;
 
 class StyleGuideController extends BaseAdminController
 {
