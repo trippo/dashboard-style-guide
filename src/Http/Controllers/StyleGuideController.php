@@ -1,6 +1,6 @@
 <?php namespace WebEd\Plugins\DashboardStyleGuide\Http\Controllers;
 
-use WebEd\Base\Core\Http\Controllers\BaseAdminController;
+use WebEd\Base\Http\Controllers\BaseAdminController;
 
 class StyleGuideController extends BaseAdminController
 {
@@ -12,7 +12,11 @@ class StyleGuideController extends BaseAdminController
     {
         parent::__construct();
 
-        $this->breadcrumbs->addLink('Style guide', route('admin::dashboard-style-guide.index.get'));
+        $this->middleware(function ($request, $next) {
+            $this->breadcrumbs->addLink('Style guide', route('admin::dashboard-style-guide.index.get'));
+
+            return $next($request);
+        });
     }
 
     public function getIndex()
